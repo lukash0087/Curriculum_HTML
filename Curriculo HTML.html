@@ -1,0 +1,109 @@
+<html>
+      <head>
+              
+  <link rel = "stylesheet" type= "text/css" href="Curriculo.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      </head>
+
+            <body>
+
+
+             <div class="img-perfil">
+
+              <img src="Eu.jpg"/>
+             </div>
+
+             <div class="dados-perfil">
+              <h1 Id="typing"> Lucas Marte Ferreira Lopes </h1>
+
+              <p> Brasileiro, Solteiro, 21 anos  <br>
+              Rua Azevedo Figueiredo 160   <br>
+              Brigadeiro Tobias | Sorocaba, SP | Cep:18108020   <br>
+              Telefone (15) 99759-8555   <br>
+              E-mail: marte.lu@hotmail.com.br   <br>
+              LinkedIn: Lucas Marte 
+              </p>
+
+            </div>
+
+            <div data-aos="zoom-in-up"  data-aos-duration="1500" class="Curriculo">
+
+            <h1 class="clearfix">Objetivo</h1> 
+
+            <hr>
+             
+            <p>Em busca de novas experiências e oportunidades como analista, programador, e desenvolvedor web. </p>     
+  
+               <h1> Formação </h1>
+
+               <hr>
+
+              <p> Ensino Superior - Análise e desenvolvimento de sistemas. <b>(Cursando)</b></p>
+
+               <h2>Principais Habilidades e Competencias </h2>  
+
+               <ul class="habilidades">
+                 <li>Desenvolvimento web em HTML Elementor e CSS. </li>
+                 <li>Conhecimento Técnico em Informática. </li>
+                 <li>Desenvolvimento Linguagem C e C#.  </li>
+                 <li>Conhecimento RPA Basico UiPatch.</li>
+                 <li>Banco de Dados My Sql Server.</li>
+                 <li>Pacote Office Avançado.</li>
+                 <li>Adobe Photoshop.</li>
+                 <li>Excel Avançado. </li>
+               </ul>                        
+                 <hr>
+  
+              <h2> Experiências  </h2>                          
+
+               <p> <b>  Empresa:</b>  Cinzel  </p>
+               <p> <b>  Tempo:</b> 25/07/2020 – 22/12/2020   </p>
+               <p> <b>  Cargo:</b> Desenvolvedor Web, WordPress. </p> 
+                 
+                <hr>                   
+
+                <p> <b>  Empresa:</b>  DPR   </p>
+                <p> <b>  Tempo:</b> 01/01/2021 - Atualmente </p>
+                <p> <b>  Cargo:</b> Aprendiz PCP Telecomunicações. </p>
+
+                  <p> <b>  Funções:</b>  Auxiliar e encerrar Ordens de Produção através de sistemas. Alimentar e otimizar planilhas gerando relatórios para identificar possíveis falhas e disponibilidade de matérias prima no sistema.  
+                 Realizar comparativos estruturar gráficos para obter-se maior visibilidade de lucros e metas atingidas mensalmente pela empresa. 
+                    </p>
+
+                <h2> <b>  Atividades Complementares</b> </h2>
+                <hr> 
+                <p> Participação no Movimento Escoteiro desde 2020. E desde 2021 atuando como chefe escoteiro sendo voluntário, aplicando o método escoteiro no desenvolvimento de crianças e jovens. </p>
+              
+                </div>
+                  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                    <script>
+                      AOS.init();
+
+                      text = document.getElementById("typing");
+                      content = "Lucas Marte Ferreira Lopes";
+
+                      var speed = 100;
+                      var cont = 0;
+                      text.textContent = "";
+                      function typeWriter () {
+                      if(cont < content.length){
+
+                        text.textContent += content.charAt(cont);
+                        cont++;
+                        setTimeout(typeWriter, speed);
+                       
+                      }else{
+                        text.textContent = '';
+                        cont = 0;
+                        typeWriter();
+                      }
+                    }
+
+                    typeWriter();
+                      
+                    </script>
+
+</body>
+
+
+</html>
